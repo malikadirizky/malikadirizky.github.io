@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Business</title>
+    <link rel="icon" href="images/logoM.jpg" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Contact Me</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="automotive.html">Automotive</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="repairs.html">Vehicle Repairs</a></li>
+                    <li><a href="#" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="container contact-container">
+                <div class="map">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.040813474338!2d106.94605649574234!3d-6.179307299058377!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sid!4v1615988882019!5m2!1sen!2sid" 
+                    width="100%" 
+                    height="550" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    title="Map Location">
+                    </iframe>
+                </div>
+
+                <div class="contact-details">
+                    <h2>Contact Us</h2>
+                    <p>Feel free to contact us through the form below or via our social media platforms!</p>
+                    <form action="#" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+
+                    <div class="social-icons">
+                        <h3>Connect with us:</h3>
+                        <a href="https://www.facebook.com/malzyas?mibextid=kFxxJD" target="_blank" title="Go To My Facebook Account">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ctrixlee_?igsh=MTN3YXoyNjJ2b3M4cw==" target="_blank" title="Go To My Instagram Account">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://wa.me/6287884138928" target="_blank" title="Go To My Contact">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Malik Adi Riski. All rights reserved.</p>
+        </div>
+    </footer>

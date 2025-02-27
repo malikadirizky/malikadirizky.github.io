@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Adi Riski</title>
+    <link rel="icon" href="images/logoM.jpg" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Welcome To My Website</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="showSection('about')">About Me</a></li>
+                    <li><a href="#" onclick="showSection('business')">Business</a></li>
+                    <li><a href="#" onclick="showSection('portofolio')">Portofolio</a></li>
+                    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <img src="images/Me.jpeg" alt="Profile Picture" class="profile-pic-home" title="Picture Of My Self">
+                <h2 id="typing-text"></h2>
+                <p>Welcome to my website!! I'm a student at Dinamika Pembangunan 1 Jakarta, Vocational High School, Majoring in Computer and Networking.</p>
+            </div>
+        </section>
+
+        <section id="about" class="content" style="display:none;">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>This website aims to share my experiences and improve my skills in the computer field which includes software and hardware. Apart from the computer field, I also gained expertise in other fields such as automotive, sports or athletics, and marketing. I once interned at PT. Aladdin Indonesia as a Admin Warehouse, during school. I did arranging stock in the warehouse, Input daily data in computer, and deliver the goods to customer. I have great communication and interpersonal skill, also i can easily adapt in every situation. Apart from that, I am also able to operate a computer and solve network problems and have coding skills as a programmer. I am a computer literate person and good at operating Microsoft Office.</p>
+            </div>
+        </section>
+
+        <section id="business" class="content" style="display:none;">
+            <div class="container">
+                <h2>Business</h2>
+                <p>Keluarga saya memiliki latar belakang yang menyukai bisnis, saat ini keluarga saya memiliki beberapa usaha kecil-kecilan seperti di bidang otomotif, kue atau makanan, dan reparasi kendaraan.</p>
+
+                <div class="business-grid" style="text-align: center;">
+                    <div class="business-item">
+                        <h3>Automotive :</h3>
+                        <p>> Kami menjual mobil bekas berkualitas dengan harga terjangkau melalui showroom milik keluarga kami. Bisnis ini didirikan oleh orangtua kami dan dijalankan oleh bapak serta saudara laki-laki saya yang lain berserta saya.</p>
+                    </div>
+
+                    <div class="business-item">
+                        <h3>Cake & Food :</h3>
+                        <p>> Kue buatan sendiri tersedia untuk dipesan selama hari libur atau acara-acara khusus. Bisnis dijalankan oleh ibu dan saudara perempuan saya.</p>
+                    </div>
+
+                    <div class="business-item">
+                        <h3>Vehicle Repairs :</h3>
+                        <p>> Kami melayani jasa perbaikan ringan untuk mobil dan sepeda motor. Bisnis ini dijalan kan oleh saya bersama saudara laki-laki saya.</p>
+                    </div>
+                </div>
+
+                <p>Jika Anda tertarik dengan bisnis keluarga kami, kalian dapat melihat rincian nya pada menu portofilio kami.</p>
+            </div>
+        </section>
+
+        <section id="portofolio" class="content" style="display:none;">
+            <div class="container">
+                <h2>Portofolio</h2>
+                <p>Here are some of my business. Click on the images for more details!</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <a href="automotive.html">
+                        <img src="images/showroom.jpg" alt="Automotive Business" class="portfolio-img">
+                        <p>Showroom</p>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="cakes.html">
+                        <img src="images/kue.jpg" alt="Cake&Food Business" class="portfolio-img">
+                        <p>Cake & Food</p>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="repairs.html">
+                        <img src="images/vehicle-repairs.jpg" alt="vehicle Repair Business" class="portfolio-img">
+                        <p>Vehicle Repairs</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>If you'd like to get in touch, please use the form below or reach out via social media!</p>
+                <form action="https://formspree.io/f/xwpvdgzk" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                
+                    <button type="submit">Send</button>
+                </form>
+                
+
+                <div class="social-icons">
+                    <h3>Connect with me on:</h3>
+                    <a href="https://www.facebook.com/malzyas?mibextid=kFxxJD" target="_blank" title="Go To My Facebook Account">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ctrixlee_?igsh=MTN3YXoyNjJ2b3M4cw==" target="_blank" title="Go To My Instagram Account">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://wa.me/6287884138928" target="_blank" title="Go To My Contact">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Malik Adi Riski. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/malzyas?mibextid=kFxxJD" title="Go To My Facebook Account" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/ctrixlee_?igsh=MTN3YXoyNjJ2b3M4cw==" title="Go To My Instagram Account" target="_blank">Instagram</a>
+                <a href="https://wa.me/6287884138928" title="Go To My Contact" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

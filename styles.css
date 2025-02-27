@@ -1,0 +1,308 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background: #f4f4f4;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #e9ecef;
+}
+
+#hero .profile-pic-home {
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Portfolio */
+#portofolio {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item p {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Profile Pictures */
+.profile-pic-automotive,
+.profile-pic-cake,
+.profile-pic-repair {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border-width: 3px;
+}
+
+.profile-pic-automotive {
+    border-color: #007BFF;
+}
+
+.profile-pic-cake {
+    border-color: #FF7F50;
+}
+
+.profile-pic-repair {
+    border-color: #28A745;
+}
+
+/* Content Row */
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 250px;
+}
+
+.text-content p {
+    text-align: left;
+}
+
+.image-content {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.map, .contact-details {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+}
+
+/* Typing Effect */
+#typing-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Blinking Cursor */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .map, .contact-details {
+        max-width: 100%;
+    }
+}
